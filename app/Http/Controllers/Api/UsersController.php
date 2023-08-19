@@ -83,6 +83,7 @@ class UsersController extends Controller
 
         return response()->json([
             'user' => new UserResource($user),
+            'token' =>$token
         ])->withCookie($cookie);
     }
 
